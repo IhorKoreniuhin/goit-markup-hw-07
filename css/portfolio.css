@@ -9,7 +9,7 @@
   margin-bottom: 50px;
 }
 
-.portfolio-btn-item:not(:last-child) {
+.portfolio-btn-item {
   margin-right: 8px;
 }
 

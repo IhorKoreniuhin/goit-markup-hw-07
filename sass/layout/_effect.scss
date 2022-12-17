@@ -1,27 +1,24 @@
-.hero {
+.effect {
   padding-top: 200px;
   padding-bottom: 200px;
-
+    
   max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/people.jpg);
+  
+  background-image: linear-gradient(to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+  url(../images/people.jpg);
   background-color: var(--hero-background-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
+    
   text-align: center;
 }
 
-.hero__title {
+.effect__title {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -35,7 +32,7 @@
   color: var(--white-text-color);
 }
 
-.hero__btn {
+.effect__btn {
   display: inline-block;
   min-width: 200px;
   border-radius: 4px;

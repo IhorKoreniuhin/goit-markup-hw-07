@@ -7,10 +7,10 @@
 
 .footer__flex {
   display: flex;
-
   margin: 0;
   padding: 0;
   list-style: none;
+  align-items: baseline;
 }
 
 .footer__logo {
@@ -22,8 +22,22 @@
 .footer-contact {
   margin-top: 20px;
 }
+
 .footer-contact__address {
   color: var(--white-text-color);
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+    
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 .footer-contact__item {
@@ -35,13 +49,13 @@
   font-size: 14px;
   line-height: 1.71;
 
-  color: var(--footer-text-color);
+  color: rgba(255, 255, 255, 0.6);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  &:focus,
+  &:hover {
+  color: var(--accent-color);
   }
 }
 
@@ -77,11 +91,14 @@
 }
 
 .footer-list__link {
-  display: block;
-
+  display: flex;
+  
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  
+  justify-content: center;
+  align-items: center;
 
   color: #ffffff;
   background-color: #ffffff10;
@@ -97,12 +114,12 @@
 }
 
 .footer-list__icon {
-  margin: 12px 0px 0px 12px;
   fill: currentColor;
 }
 
 .footer-submit {
   margin-left: 93px;
+  box-sizing: border-box;
 }
 
 .footer-submit__text {
@@ -121,6 +138,7 @@
   margin: 0;
   padding: 13px 16px;
   border-radius: 4px;
+  box-sizing: border-box;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--hero-background-color);
@@ -163,8 +181,11 @@
     content: "";
     display: inline-block;
     width: 24px;
-    height: 20px;
+    height: 24px;
     margin-left: 10px;
-    background-image: url(../images/send.svg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/icon-send.svg);
   }
 }

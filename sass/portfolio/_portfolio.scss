@@ -112,6 +112,8 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  color: var(--primary-text-color)
 }
 
 .portfolio-list-text {
@@ -122,3 +124,7 @@
 
   color: var(--secondary-text-color);
 }
+
+.images{
+  display: block;
+  }
